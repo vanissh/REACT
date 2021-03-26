@@ -9,7 +9,8 @@ class Header extends React.Component {
                         <div className="header-phonelink"><a href="tel:7(962)556-1234">+7(962)556-1234</a></div>
                     </div>
                 </div>
-            </header>)    
+            </header>
+        )    
     }
 };
 
@@ -26,8 +27,8 @@ class Main extends React.Component{
                             <button className="btn main-btn"><span>Подробнее</span></button>
                     </div>
                 </div>
-            </main>)
-        
+            </main>
+        )
     }
 }
 
@@ -71,30 +72,30 @@ class Button extends React.Component{
 class Features extends React.Component{
     render(){
         return(
-                <section className="features">
-                    <div className="wrapper">
-                        <div className="features-wrapper">
-                            <h2 className="features-head">Уникальный заголовок для преимущества компании</h2>
-                            <div className="features-subhead">О нас</div>
-                            <div className="features-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
-                                                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
-                                                            оратору отточить.
-                            </div>
-                            <div className="features-slider">
-                            <div className="features-slider_items">
-
-                                <FeatureItem text="Первое целевое преимущество" img="url(./images/1.svg)"/>
-                                <FeatureItem text="Второе целевое преимущество" img="url(./images/2.svg)"/>
-                                <FeatureItem text="Третье целевое преимущество" img="url(./images/3.svg)"/>
-                                <FeatureItem text="Четвертое целевое преимущество" img="url(./images/4.svg)"/>
-
-                                <Button className="features-slider-arrow features-slider-prev"/>
-                                <Button className="features-slider-arrow features-slider-next"/>
-                            </div>    
-                            </div>
+            <section className="features">
+                <div className="wrapper">
+                    <div className="features-wrapper">
+                        <h2 className="features-head">Уникальный заголовок для преимущества компании</h2>
+                        <div className="features-subhead">О нас</div>
+                        <div className="features-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                                                        оратору отточить.
                         </div>
-		            </div>
-                </section>
+                        <div className="features-slider">
+                        <div className="features-slider_items">
+
+                            <FeatureItem text="Первое целевое преимущество" img="url(./images/1.svg)"/>
+                            <FeatureItem text="Второе целевое преимущество" img="url(./images/2.svg)"/>
+                            <FeatureItem text="Третье целевое преимущество" img="url(./images/3.svg)"/>
+                            <FeatureItem text="Четвертое целевое преимущество" img="url(./images/4.svg)"/>
+
+                            <Button className="features-slider-arrow features-slider-prev"/>
+                            <Button className="features-slider-arrow features-slider-next"/>
+                        </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
         )
         
     }
