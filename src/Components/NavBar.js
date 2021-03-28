@@ -14,7 +14,7 @@ const NavBarStyled = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #299B01;
+    background-color: #c73636;
     color: white;
 `;
 
@@ -24,7 +24,7 @@ const Logo = styled.div`
 `;
 
 const H1 = styled.h1`
-    font-size: 24px;
+    font-size: 30px;
     margin-left: 15px;
 `;
 
@@ -37,7 +37,11 @@ const ImgLogo = styled.img`
     width: 50px;
 `;
 
-const Container = styled.div`
+const Login = styled.button`
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
     position: relative;
     margin-left: auto;
     text-align: center;
@@ -46,18 +50,16 @@ const Container = styled.div`
 const ImgSign = styled.img`
 `;
 
-const Button = styled.button``;
-
 
 export const NavBar = () => (
     <NavBarStyled>
         <Logo>
             <ImgLogo src={logoImg} alt="logo"/>
             <H1>MrDonald's</H1>
-            <Container>
+            <Login>
                 <ImgSign src={signImg} alt="sign"/>
                 <H2>Sign in</H2> 
-            </Container>
+            </Login>
         </Logo>   
     </NavBarStyled>
 )
